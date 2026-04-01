@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Feedback</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  body {
+            font-family: Arial, sans-serif;
+	  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNn20Qa57zyrXI4sD7zV6UgRTI-mDO_es3BA&s');       
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size: cover;
+}
+
+        .container {
+            width: 40%;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .box-group {
+            margin-bottom: 15px;
+        }
+
+        .inline {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #800080;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button:hover {
+    background-color: #4CAF50;
+      
+        }
+.footer {
+  background-color: rgba(0,0,0,0.8);
+  color: yellow;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+    <h1>📚 Book Feedback Form</h1>
+
+    <form action="thankyou.html">
+
+
+        <!-- Name -->
+        <label>Your Name:</label>
+        <input type="text" name="name" required>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <!-- Book Name -->
+        <label>Book Name:</label>
+        <input type="text" name="book">
+
+      
+        <!-- Rating (Radio Buttons) -->
+        <div class="box-group">
+            <label>Rating:</label><br>
+            <div class="inline"><input type="radio" name="rating"> ⭐</div>
+            <div class="inline"><input type="radio" name="rating"> ⭐⭐</div>
+            <div class="inline"><input type="radio" name="rating"> ⭐⭐⭐</div>
+            <div class="inline"><input type="radio" name="rating"> ⭐⭐⭐⭐</div>
+            <div class="inline"><input type="radio" name="rating"> ⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="box-group">
+            <label>What did you like?</label><br>
+            <div class="inline"><input type="checkbox"> Accuracy</div>
+            <div class="inline"><input type="checkbox"> Concepts</div>
+            <div class="inline"><input type="checkbox"> Content</div>
+            <div class="inline"><input type="checkbox"> Examples</div>
+	    <div class="inline"><input type="checkbox"> Clarity</div>
+
+        </div>
+
+        <!-- Feedback -->
+        <label>Your Feedback:</label>
+        <textarea rows="4" placeholder="Write your feedback here..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+</div>
+
+</div>
+</body>
+</html>
